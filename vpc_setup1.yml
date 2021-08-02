@@ -162,7 +162,7 @@
         prisub3id: "{{prisub3_out.subnet.id}}"
         igw_outid:  "{{igw_out.gateway_id}}"
         pubrt_outid: "{{pubrt_out.route_table.id}}"
-        natgw_outid: "{{natgw_out.gateway_id}}"
+        natgw_outid: "{{natgw_out.nat_gateway_id}}"
         prirt_outid: "{{prirt_out.route_table.id}}"
 
     - name:
