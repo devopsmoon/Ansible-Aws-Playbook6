@@ -149,7 +149,7 @@
         - prisub3_out.subnet.id
         - igw_out.gateway_id
         - pubrt_out.route_table.id
-        - natgw_out.gatway_id
+        - natgw_out.gateway_id
         - prirt_out.route_table.id
 
     - set_fact:
@@ -162,7 +162,7 @@
         prisub3id: "{{prisub3_out.subnet.id}}"
         igw_outid:  "{{igw_out.gateway_id}}"
         pubrt_outid: "{{pubrt_out.route_table.id}}"
-        natgw_outid: "{{natgw_out.gatway_id}}"
+        natgw_outid: "{{natgw_out.gateway_id}}"
         prirt_outid: "{{prirt_out.route_table.id}}"
 
     - name:
