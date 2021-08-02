@@ -24,7 +24,7 @@
     - name: saving the key
       copy:
         content: "{{vpcout.vpc.id}}"
-        dest: "./loginkey.pem"
+        dest: ./loginkey.pem
         mode: 0600
       when: key.changed
 
