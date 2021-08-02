@@ -119,7 +119,7 @@
         state: present
         subnet_id: "{{pubsub1_out.subnet.id}}"
         wait: yes
-        wait_timeout: yes
+        wait_timeout: 300
         if_exist_do_not_create: true
       register: natgw_out
 
