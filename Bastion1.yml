@@ -7,6 +7,9 @@
     - name: importing the variables
       include_vars: vars/Bastion_setup
 
+    - name: importing the variables
+      include_vars: vars/out_put.var
+
     - name: creating the aws key pair
       ec2_key:
         name: vprofile
