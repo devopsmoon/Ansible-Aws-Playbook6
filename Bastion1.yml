@@ -48,7 +48,6 @@
       ec2:
         key_name: vprofile-key
         region: "{{region}}"
-        state: present
         instance_type: t2.micro
         image: "{{bastion_ami}}"
         wait: yes
