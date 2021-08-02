@@ -99,7 +99,7 @@
           Name: vprofile-igw
       register: igw_out
 
-    - name: creating the route table for private subnet
+    - name: creating the route table for public subnet
       ec2_vpc_route_table:
         vpc_id: "{{vpcout.vpc.id}}"
         region: "{{region}}"
@@ -134,7 +134,7 @@
           - "{{prisub3_out.subnet.id}}"
         routes:
           - dest: 0.0.0.0/0
-            gateway_id: "{{natgw_out.nat_gateway_out}}"
+            gateway_id: "{{natgw_out.nat_gateway_id}}"
       register: prirt_out
 
     - debug:
