@@ -34,7 +34,7 @@
       ec2_group:
         name: bastionsg
         description: allow port 22 from any where
-        vpc_id: "{{vpcid}}"
+        vpc_id: "{{vpcoutid}}"
         region: "{{region}}"
         state: present
         rules:
